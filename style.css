@@ -5,6 +5,10 @@
     /*border: 5px solid red;*/
     transition-duration: 0.4s;
     color: #d3d3d3;
+    min-width: 0;
+    min-height: 0;
+    flex: 1 1 auto;
+    display: flex;
 }
 
 
@@ -14,6 +18,8 @@ head {
 
 body {
     display: flex;
+    width: 95vw;
+    font-size: 10px;
 }
 
 .main {
@@ -46,6 +52,7 @@ nav {
     border-radius: 20px;
     margin-bottom: 20px;
     background-color: #383838;
+    z-index: 1;
 }
 
 .text {
@@ -64,7 +71,7 @@ nav {
     display: flex;
     width: 90%;
     flex-direction: row;
-    background-color: #383838;
+    background-color: #ffffff00;
     margin-left: auto;
     margin-right: auto;
 }
@@ -97,7 +104,11 @@ div {
 }
 
 
-
+iframe {
+    aspect-ratio: 16 / 9;
+    height: 100%;
+    box-sizing: content-box;
+}
 iframe:hover {
     box-shadow: 0px 0px 10px white, 0px 0px 20px #ff00ff;
     transform: scale(1.05);
@@ -166,6 +177,7 @@ a.link:hover {
     text-align: left;
     flex-direction: row;
     align-items: center;
+    flex: 1;
     width: 80%;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -180,6 +192,10 @@ a.link:hover {
 
 .screenshot {
     margin: 10px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
 }
 
 .projlinks {
@@ -227,4 +243,11 @@ input {
 
 .imglink:hover {
     transform: scale(1.1);
+}
+
+.example {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
 }
